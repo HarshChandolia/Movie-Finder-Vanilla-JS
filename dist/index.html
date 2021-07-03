@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Movie Lookup</title>
+</head>
+<body>
+    <div class="container">
+        <h1>MOVIE LOOKUP HELPER</h1>
+        <h3>Want to know the plot, ratings, etc about a movie? <br><br>Enter 1 of the 2 fields below:</h3>
+        <div class="movie-name">
+            <label for="name">MOVIE NAME</label>
+            <input type="text" id="name" placeholder="Enter movie name">
+        </div>
+        <div class="imdb-id">
+            <label for="imdb-id">IMDB ID</label>
+            <input type="text" id="imdb-id" placeholder="Enter imdb id">
+        </div>
+        <input type="submit" id="form-submit" value="SUBMIT">
+    </div>
+    <div id="loading"></div>
+    <div id="movie-metadata"></div>
+
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
