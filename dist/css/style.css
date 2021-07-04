@@ -1,118 +1,245 @@
-body, html {
-    margin: 0;
-    padding: 0;
-}
+@media screen and (min-width: 600px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
 
-.container {
-    background-color: rgb(209, 224, 245);
-    border: 2px solid black;
-    padding: 0 1em 1em;
-    margin: 0 4em;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
+    .container {
+        background-color: rgb(209, 224, 245);
+        /* border: 2px solid black; */
+        padding: 0 1em 1em;
+        /* margin: 0 4em; */
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
 
-.container h1 {
-    font-family: 'PT Serif', serif;
-    margin: 0;
-    padding: 0.5em 0 0 0;
-}
+    .container h1 {
+        font-family: 'PT Serif', serif;
+        margin: 0;
+        padding: 0.5em 0 0 0;
+    }
 
-.container h3 {
-    padding-top: 0.25em;
-    font-family: 'Iceland', cursive;
-    font-size: 1.5em;
-}
+    .container h3 {
+        /* padding-top: 0.25em; */
+        font-family: 'Iceland', cursive;
+        font-size: 1.5em;
+    }
 
-.movie-name {
-    font-family: 'Iceland', cursive;
-    font-weight: bold;
-    font-size: 1.4em;
-    margin: 1em 0;
-}
+    .movie-name {
+        font-family: 'Iceland', cursive;
+        font-weight: bold;
+        font-size: 1.4em;
+        /* margin: 1em 0; */
+    }
 
-.imdb-id {
-    font-family: 'Iceland', cursive;
-    font-weight: bold;
-    font-size: 1.4em;
-    margin-bottom: 1em;
-}
+    .imdb-id {
+        font-family: 'Iceland', cursive;
+        font-weight: bold;
+        font-size: 1.4em;
+        margin: 1em 0;
+    }
 
-.movie-name > input, .imdb-id > input {
-    font-family: 'Iceland', cursive;
-    font-size: 1.2em;
-    margin-left: 0.5em;
-    width: 60%;
-}
+    .movie-name > input, .imdb-id > input {
+        font-family: 'Iceland', cursive;
+        font-size: 1.2em;
+        margin-left: 0.5em;
+        width: 420px;
+    }
 
-#form-submit {
-    background-color: rgb(25, 25, 58);
-    color: rgb(209, 224, 245);
-    font-family: 'Iceland', cursive;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 0.5em 0;
-    width: 50%;
-    align-self: center;
-}
+    #form-submit {
+        background-color: rgb(25, 25, 58);
+        color: rgb(209, 224, 245);
+        font-family: 'Iceland', cursive;
+        font-size: 1.4em;
+        font-weight: bold;
+        padding: 0.5em 0;
+        width: 50%;
+        align-self: flex-start;
+        border-radius: 10px;
+    }
 
-.result-container {
-    background-color: yellowgreen;
-    border: 2px solid rgb(16, 58, 16);
-    margin: 1em 4em;
-    padding: 0 1em;
-}
+    .result-container {
+        background-color: yellowgreen;
+        /* border: 2px solid rgb(16, 58, 16); */
+        margin: 1em 0;
+        padding: 0 1em;
+    }
 
-@media screen and (min-width: 768px) {
     .result-items {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         flex-wrap: wrap;
     }
+
+    .item {
+        font-family: 'Andika', sans-serif;
+        display: flex;
+        margin: 0.8em 0;
+        align-items: flex-start;
+    }
+
+    .item > h4 {
+        font-family: 'Andika', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .item > input, textarea {
+        font-family: 'Andika', sans-serif;
+        font-weight: bold;
+        margin-left: 0.5em;
+        padding-left: 0.5em;
+        font-size: 1em;
+        width: 450px;
+    }
+
+    .loader {
+        text-align: center;
+    }
+
+    .alert-danger {
+        font-family: 'Andika', sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        color: red;
+    }
+
+    .alert-success {
+        font-family: 'Andika', sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        color: green;
+    }
 }
 
-.item {
-    font-family: 'Andika', sans-serif;
-    display: flex;
-    margin: 0.8em 0;
-    align-items: flex-start;
-}
+@media screen and (max-width: 600px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
 
-.item > h4 {
-    font-family: 'Andika', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    .container {
+        background-color: rgb(209, 224, 245);
+        /* border: 1px solid black; */
+        padding: 0 0.6em 0.6em;
+        margin: 0;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
 
-.item > input, textarea {
-    font-family: 'Andika', sans-serif;
-    font-weight: bold;
-    margin-left: 0.5em;
-    padding-left: 0.5em;
-    font-size: 1em;
-    width: 468px;
-}
+    .container h1 {
+        font-family: 'PT Serif', serif;
+        margin: 0;
+        padding: 0.3em 0 0 0;
+    }
 
-.loader {
-    text-align: center;
-}
+    .container h3 {
+        /* padding-top: 0.25em; */
+        font-family: 'Iceland', cursive;
+        font-size: 1.5em;
+    }
 
-.alert-danger {
-    font-family: 'Andika', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    color: red;
-}
+    .movie-name, .imdb-id {
+        font-family: 'Iceland', cursive;
+        font-weight: bold;
+        font-size: 1.4em;
+        margin-bottom: 0.6em;
+        width: 100%;
+    }
 
-.alert-success {
-    font-family: 'Andika', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    color: green;
+    .movie-name > label, .imdb-id > label {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.3em;
+    }
+
+    .movie-name > input, .imdb-id > input {
+        font-family: 'Iceland', cursive;
+        font-size: 0.8em;
+        /* margin-right: 0.5em; */
+        width: 95%;
+    }
+
+    #form-submit {
+        background-color: rgb(25, 25, 58);
+        color: rgb(209, 224, 245);
+        font-family: 'Iceland', cursive;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 0.2em 0;
+        width: 50%;
+        align-self: flex-start;
+        border-radius: 10px;
+    }
+
+    .result-container {
+        background-color: yellowgreen;
+        /* border: 2px solid rgb(16, 58, 16); */
+        overflow: auto;
+        margin: 0;
+        padding: 0 0.6em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .result-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .item {
+        font-family: 'Andika', sans-serif;
+        margin: 0.3em 0;
+        width: 95%;
+    }
+
+    .item > h4 {
+        font-family: 'Andika', sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 95%;
+    }
+
+    .item > input, textarea {
+        font-family: 'Andika', sans-serif;
+        font-weight: bold;
+        /* margin-left: 0.5em;
+        padding-left: 0.5em; */
+        font-size: 0.8em;
+        width: 95%;
+    }
+
+    .loader {
+        text-align: center;
+    }
+
+    .alert-danger {
+        font-family: 'Andika', sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: red;
+    }
+
+    .alert-success {
+        font-family: 'Andika', sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: green;
+    }
 }
 
 
